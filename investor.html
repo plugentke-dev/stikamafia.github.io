@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Opportunity - StiKaMafia | Cashflow-First Sticker Business in Embu</title>
+    <meta name="description" content="Invest in StiKaMafia: A fast-turnaround sticker business generating predictable monthly cashflow. 10-15% revenue share, 1.5x return cap, 6-10 month payout.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/components.css">
+    <link rel="stylesheet" href="assets/animations.css">
+    
+    <style>
+        /* Investor Page Specific Styles */
+        .investor-hero {
+            background: linear-gradient(135deg, #000000 0%, #1f2937 50%, #dc2626 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .metric-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .metric-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-4px);
+        }
+        
+        .investment-calculator {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            padding-bottom: 2rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #dc2626, #000000);
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 6px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #dc2626;
+            border: 3px solid white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <svg width="40" height="40" viewBox="0 0 100 100">
+                    <defs>
+                        <linearGradient id="logoGradientInvestor" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <polygon points="50,10 90,30 90,70 50,90 10,70 10,30" fill="url(#logoGradientInvestor)" />
+                    <text x="50" y="65" text-anchor="middle" fill="white" font-size="40" font-weight="bold">S</text>
+                </svg>
+                <span class="logo-text">StiKaMafia</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#pricing" class="nav-link">Pricing</a>
+                <a href="#investment-terms" class="nav-link">Investment Terms</a>
+                <a href="#founder" class="nav-link">Founder</a>
+            </div>
+
+            <a href="#contact-investor" class="whatsapp-btn" style="padding: 0.75rem 1.5rem;">
+                <span>💼</span>
+                <span>Schedule Call</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="investor-hero">
+        <div style="position: absolute; inset: 0; opacity: 0.1;">
+            <div style="position: absolute; top: 20%; left: 10%; width: 400px; height: 400px; background: radial-gradient(circle, #dc2626 0%, transparent 70%); animation: pulse 8s ease-in-out infinite;"></div>
+            <div style="position: absolute; bottom: 20%; right: 10%; width: 500px; height: 500px; background: radial-gradient(circle, #dc2626 0%, transparent 70%); animation: pulse 12s ease-in-out infinite;"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style="position: relative; z-index: 1; padding: 8rem 1rem 4rem;">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left: Pitch -->
+                <div>
+                    <div style="display: inline-block; background: rgba(220, 38, 38, 0.2); color: #fca5a5; padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; margin-bottom: 1.5rem; border: 1px solid rgba(220, 38, 38, 0.3);">
+                        🚀 Angel Investment Opportunity
+                    </div>
+                    
+                    <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; color: #ffffff; line-height: 1.1; margin-bottom: 1.5rem;">
+                        Invest in Embu's<br>
+                        <span style="background: linear-gradient(135deg, #dc2626 0%, #fca5a5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Fastest-Growing</span><br>
+                        Sticker Business
+                    </h1>
+                    
+                    <p style="font-size: 1.25rem; color: #cbd5e1; line-height: 1.7; margin-bottom: 2rem;">
+                        <strong style="color: #ffffff;">StiKaMafia</strong> generates predictable monthly cashflow with a sell-first, print-later system. No dead stock. No cash traps. Just disciplined execution.
+                    </p>
+
+                    <!-- Key Metrics -->
+                    <div class="grid grid-cols-3 gap-4 mb-8">
+                        <div class="metric-card">
+                            <div style="font-size: 2rem; font-weight: 800; color: #dc2626; margin-bottom: 0.25rem;">10-15%</div>
+                            <div style="font-size: 0.875rem; color: #cbd5e1;">Monthly Revenue Share</div>
+                        </div>
+                        <div class="metric-card">
+                            <div style="font-size: 2rem; font-weight: 800; color: #dc2626; margin-bottom: 0.25rem;">1.5x</div>
+                            <div style="font-size: 0.875rem; color: #cbd5e1;">Return Cap</div>
+                        </div>
+                        <div class="metric-card">
+                            <div style="font-size: 2rem; font-weight: 800; color: #dc2626; margin-bottom: 0.25rem;">6-10</div>
+                            <div style="font-size: 0.875rem; color: #cbd5e1;">Month Payout</div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#investment-terms" style="display: inline-flex; align-items: center; gap: 0.75rem; background: #dc2626; color: white; padding: 1rem 2rem; border-radius: 9999px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 20px rgba(220, 38, 38, 0.4); transition: all 0.3s;">
+                            <span>📊</span>
+                            <span>View Investment Terms</span>
+                        </a>
+                        <a href="#contact-investor" style="display: inline-flex; align-items: center; gap: 0.75rem; background: rgba(255, 255, 255, 0.1); color: white; padding: 1rem 2rem; border-radius: 9999px; font-weight: 600; text-decoration: none; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s;">
+                            <span>💬</span>
+                            <span>Schedule a Call</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Investment Calculator -->
+                <div class="investment-calculator">
+                    <h3 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 1.5rem;">
+                        Investment Calculator
+                    </h3>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <label style="display: block; font-weight: 600; color: #475569; margin-bottom: 0.5rem;">Investment Amount (KSh)</label>
+                        <input type="range" id="investmentAmount" min="250000" max="500000" step="50000" value="300000" 
+                               style="width: 100%; accent-color: #dc2626;">
+                        <div style="display: flex; justify-content: space-between; margin-top: 0.5rem;">
+                            <span style="color: #64748b; font-size: 0.875rem;">250K</span>
+                            <span style="color: #1f2937; font-weight: 700; font-size: 1.25rem;" id="investmentDisplay">300,000</span>
+                            <span style="color: #64748b; font-size: 0.875rem;">500K</span>
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #fee2e2 0%, #fef2f2 100%); border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div>
+                                <div style="color: #64748b; font-size: 0.875rem; margin-bottom: 0.25rem;">Monthly Revenue Share</div>
+                                <div style="color: #1f2937; font-weight: 700; font-size: 1.25rem;" id="monthlyShare">10-15%</div>
+                            </div>
+                            <div>
+                                <div style="color: #64748b; font-size: 0.875rem; margin-bottom: 0.25rem;">Total Return</div>
+                                <div style="color: #dc2626; font-weight: 700; font-size: 1.25rem;" id="totalReturn">KSh 450,000</div>
+                            </div>
+                            <div>
+                                <div style="color: #64748b; font-size: 0.875rem; margin-bottom: 0.25rem;">Your Profit</div>
+                                <div style="color: #059669; font-weight: 700; font-size: 1.25rem;" id="profit">KSh 150,000</div>
+                            </div>
+                            <div>
+                                <div style="color: #64748b; font-size: 0.875rem; margin-bottom: 0.25rem;">ROI</div>
+                                <div style="color: #059669; font-weight: 700; font-size: 1.25rem;">50%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="border-top: 1px solid #e5e7eb; padding-top: 1rem;">
+                        <p style="color: #64748b; font-size: 0.875rem; line-height: 1.6;">
+                            <strong>Payout Structure:</strong> Monthly payments via M-Pesa until 1.5x return is reached. Typical timeline: 6-10 months.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem Section -->
+    <section style="padding: 5rem 0; background: white;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="section-badge">The Market Opportunity</span>
+                <h2 class="section-heading">A Real Problem in Embu</h2>
+                <p class="section-subheading">Clear demand, no fast disciplined operator—until now.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 style="font-size: 1.75rem; font-weight: 700; color: #1f2937; margin-bottom: 1.5rem;">
+                        The Sticker Market Has Structural Problems
+                    </h3>
+                    
+                    <div style="space-y: 1rem;">
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="flex-shrink: 0; width: 40px; height: 40px; background: #fee2e2; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: #dc2626; font-weight: bold;">❌</div>
+                            <div>
+                                <div style="font-weight: 600; color: #1f2937; margin-bottom: 0.25rem;">Small businesses lack professional packaging</div>
+                                <div style="color: #64748b; font-size: 0.875rem;">They want branded stickers but can't find fast, affordable options</div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="flex-shrink: 0; width: 40px; height: 40px; background: #fee2e2; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: #dc2626; font-weight: bold;">❌</div>
+                            <div>
+                                <div style="font-weight: 600; color: #1f2937; margin-bottom: 0.25rem;">Events need last-minute stickers</div>
+                                <div style="color: #64748b; font-size: 0.875rem;">Weddings, launches, promos—always urgent, always stressed</div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="flex-shrink: 0; width: 40px; height: 40px; background: #fee2e2; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: #dc2626; font-weight: bold;">❌</div>
+                            <div>
+                                <div style="font-weight: 600; color: #1f2937; margin-bottom: 0.25rem;">Existing printers are slow & unreliable</div>
+                                <div style="color: #64748b; font-size: 0.875rem;">Days of delays, inconsistent quality, upfront deposits required</div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="flex-shrink: 0; width: 40px; height: 40px; background: #fee2e2; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: #dc2626; font-weight: bold;">❌</div>
+                            <div>
+                                <div style="font-weight: 600; color: #1f2937; margin-bottom: 0.25rem;">Competitors print before demand</div>
+                                <div style="color: #64748b; font-size: 0.875rem;">Dead stock, cash traps, and inconsistent cashflow kill businesses</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #0f172a 0%, #1f2937 100%); border-radius: 1.5rem; padding: 3rem; color: white;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">💡</div>
+                    <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">Our Unfair Advantage</h3>
+                    <div style="font-size: 1.125rem; color: #cbd5e1; line-height: 1.7; margin-bottom: 2rem;">
+                        <strong style="color: #fca5a5;">We sell first, then print.</strong><br>
+                        No dead stock. No cash traps. Speed beats competition.
+                    </div>
+                    
+                    <div style="background: rgba(220, 38, 38, 0.1); border-left: 4px solid #dc2626; padding: 1rem; border-radius: 0.5rem;">
+                        <div style="font-weight: 600; margin-bottom: 0.5rem;">Prepaid orders protect cashflow</div>
+                        <div style="font-weight: 600; margin-bottom: 0.5rem;">Same-day/24-hour delivery crushes slow competitors</div>
+                        <div style="font-weight: 600;">Local dominance: Embu first, then expand</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Terms Section -->
+    <section id="investment-terms" style="padding: 5rem 0; background: linear-gradient(to bottom, #f8fafc 0%, #ffffff 100%);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="section-badge">Investment Structure</span>
+                <h2 class="section-heading">Simple, Transparent Terms</h2>
+                <p class="section-subheading">Revenue share, not equity. Fast capital recovery with clear exit.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                
+                <!-- Investment Details -->
+                <div style="background: white; border-radius: 1.5rem; padding: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-left: 4px solid #dc2626;">
+                    <h3 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 2rem;">Investment Offer</h3>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <div style="color: #64748b; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem;">CAPITAL NEEDED</div>
+                        <div style="font-size: 2.5rem; font-weight: 800; color: #1f2937;">KSh 250K - 500K</div>
+                    </div>
+
+                    <div style="border-top: 1px solid #e5e7eb; padding-top: 1.5rem; margin-bottom: 1.5rem;">
+                        <h4 style="font-weight: 700; color: #1f2937; margin-bottom: 1rem;">Structure Details</h4>
+                        <div style="space-y: 1rem;">
+                            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9;">
+                                <span style="color: #64748b;">Type</span>
+                                <span style="font-weight: 600; color: #1f2937;">Revenue Share</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9;">
+                                <span style="color: #64748b;">Monthly Share</span>
+                                <span style="font-weight: 600; color: #dc2626;">10-15% of revenue</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9;">
+                                <span style="color: #64748b;">Return Cap</span>
+                                <span style="font-weight: 600; color: #dc2626;">1.5x invested capital</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9;">
+                                <span style="color: #64748b;">Payout Method</span>
+                                <span style="font-weight: 600; color: #1f2937;">Monthly via M-Pesa</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0;">
+                                <span style="color: #64748b;">Timeline</span>
+                                <span style="font-weight: 600; color: #1f2937;">6-10 months typical</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #fef2f2; border-radius: 0.75rem; padding: 1rem; border-left: 3px solid #dc2626;">
+                        <div style="font-weight: 700; color: #991b1b; margin-bottom: 0.5rem;">Clean Exit</div>
+                        <div style="color: #475569; font-size: 0.875rem;">Once 1.5x return is paid, the deal ends. No ongoing obligations.</div>
+                    </div>
+                </div>
+
+                <!-- Use of Funds -->
+                <div style="background: linear-gradient(135deg, #0f172a 0%, #1f2937 100%); border-radius: 1.5rem; padding: 2.5rem; color: white;">
+                    <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem;">Use of Funds</h3>
+                    
+                    <p style="color: #cbd5e1; margin-bottom: 2rem; line-height: 1.7;">
+                        Every shilling goes directly into growth—no personal expenses, no lifestyle spending.
+                    </p>
+
+                    <div style="space-y: 1.5rem;">
+                        <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.75rem; padding: 1.25rem; border-left: 3px solid #dc2626;">
+                            <div style="display: flex; justify-content: between; align-items: start; margin-bottom: 0.5rem;">
+                                <span style="font-size: 1.5rem; margin-right: 1rem;">⚙️</span>
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 700; margin-bottom: 0.25rem;">Equipment & Tools</div>
+                                    <div style="color: #cbd5e1; font-size: 0.875rem;">Increase speed & production capacity</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.75rem; padding: 1.25rem; border-left: 3px solid #dc2626;">
+                            <div style="display: flex; justify-content: between; align-items: start; margin-bottom: 0.5rem;">
+                                <span style="font-size: 1.5rem; margin-right: 1rem;">📦</span>
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 700; margin-bottom: 0.25rem;">Bulk Materials</div>
+                                    <div style="color: #cbd5e1; font-size: 0.875rem;">Reduce unit costs, improve margins</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.75rem; padding: 1.25rem; border-left: 3px solid #dc2626;">
+                            <div style="display: flex; justify-content: between; align-items: start; margin-bottom: 0.5rem;">
+                                <span style="font-size: 1.5rem; margin-right: 1rem;">📢</span>
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 700; margin-bottom: 0.25rem;">Marketing & Outreach</div>
+                                    <div style="color: #cbd5e1; font-size: 0.875rem;">Increase daily order flow</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.75rem; padding: 1.25rem; border-left: 3px solid #dc2626;">
+                            <div style="display: flex; justify-content: between; align-items: start; margin-bottom: 0.5rem;">
+                                <span style="font-size: 1.5rem; margin-right: 1rem;">💰</span>
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 700; margin-bottom: 0.25rem;">Operations Buffer</div>
+                                    <div style="color: #cbd5e1; font-size: 0.875rem;">Smooth delivery & cashflow management</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Example Scenario -->
+            <div style="background: white; border-radius: 1.5rem; padding: 3rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+                <h3 style="font-size: 1.75rem; font-weight: 700; color: #1f2937; margin-bottom: 2rem; text-align: center;">
+                    Example Investment Scenario
+                </h3>
+
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div style="text-align: center; padding: 1.5rem; background: #f8fafc; border-radius: 1rem;">
+                        <div style="color: #64748b; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem;">YOU INVEST</div>
+                        <div style="font-size: 2rem; font-weight: 800; color: #1f2937;">KSh 300K</div>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem; background: #fee2e2; border-radius: 1rem;">
+                        <div style="color: #64748b; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem;">RETURN CAP</div>
+                        <div style="font-size: 2rem; font-weight: 800; color: #dc2626;">KSh 450K</div>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem; background: #d1fae5; border-radius: 1rem;">
+                        <div style="color: #64748b; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem;">YOUR PROFIT</div>
+                        <div style="font-size: 2rem; font-weight: 800; color: #059669;">KSh 150K</div>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem; background: #f8fafc; border-radius: 1rem;">
+                        <div style="color: #64748b; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem;">ROI</div>
+                        <div style="font-size: 2rem; font-weight: 800; color: #059669;">50%</div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem; text-align: center; color: #64748b;">
+                    <p><strong>Timeline:</strong> 6-10 months | <strong>Payment:</strong> Monthly via M-Pesa | <strong>Risk:</strong> Revenue-based (flexible during slow months)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traction & Proof Section -->
+    <section id="traction" style="padding: 5rem 0; background: white;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="section-badge">Proof, Not Promises</span>
+                <h2 class="section-heading">This Business Is Already Running</h2>
+                <p class="section-subheading">We're not looking for validation—we're looking to scale what works.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div style="background: linear-gradient(135deg, #fee2e2 0%, #fef2f2 100%); border-radius: 1.5rem; padding: 2rem; text-align: center; border-top: 4px solid #dc2626;">
+                    <div style="font-size: 3rem; font-weight: 800; color: #dc2626; margin-bottom: 0.5rem;">✓</div>
+                    <h4 style="font-size: 1.25rem; font-weight: 700; color: #1f2937; margin-bottom: 0.5rem;">Active Brand</h4>
+                    <p style="color: #64748b; line-height: 1.6;">Paying customers, repeat orders, established local presence</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #f3f4f6 0%, #ffffff 100%); border-radius: 1.5rem; padding: 2rem; text-align: center; border-top: 4px solid #000000;">
+                    <div style="font-size: 3rem; font-weight: 800; color: #1f2937; margin-bottom: 0.5rem;">✓</div>
+                    <h4 style="font-size: 1.25rem; font-weight: 700; color: #1f2937; margin-bottom: 0.5rem;">Proven System</h4>
+                    <p style="color: #64748b; line-height: 1.6;">Equipment, suppliers, execution process already running</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #fee2e2 0%, #fef2f2 100%); border-radius: 1.5rem; padding: 2rem; text-align: center; border-top: 4px solid #dc2626;">
+                    <div style="font-size: 3rem; font-weight: 800; color: #dc2626; margin-bottom: 0.5rem;">✓</div>
+                    <h4 style="font-size: 1.25rem; font-weight: 700; color: #1f2937; margin-bottom: 0.5rem;">Clear Demand</h4>
+                    <p style="color: #64748b; line-height: 1.6;">Repeat branding, sticker orders, reseller interest validated</p>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #0f172a 0%, #1f2937 100%); border-radius: 1.5rem; padding: 3rem; color: white; text-align: center;">
+                <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">Capital Scales Speed & Volume</h3>
+                <p style="font-size: 1.125rem; color: #cbd5e1; max-width: 700px; margin: 0 auto;">
+                    We're not testing demand—demand is proven. Investment accelerates equipment, materials, and marketing to capture more orders faster.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" style="padding: 5rem 0; background: linear-gradient(to bottom, #f8fafc 0%, #ffffff 100%);">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="section-badge">Why Trust Me</span>
+                <h2 class="section-heading">Operator, Not Theorist</h2>
+            </div>
+
+            <div style="background: white; border-radius: 1.5rem; padding: 3rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-left: 4px solid #dc2626;">
+                <div class="grid md:grid-cols-3 gap-8 items-center mb-8">
+                    <div style="text-align: center;">
+                        <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #000000 0%, #dc2626 100%); margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; font-weight: 800;">
+                            MJ
+                        </div>
+                        <h3 style="font-weight: 700; color: #1f2937; margin-bottom: 0.25rem;">Mista Junior Trix</h3>
+                        <p style="color: #64748b; font-size: 0.875rem;">Founder & Operator</p>
+                    </div>
+
+                    <div style="md:col-span-2;">
+                        <p style="color: #475569; line-height: 1.7; margin-bottom: 1rem;">
+                            I'm not pitching a startup dream. I run this business every day—taking orders, managing suppliers, delivering results.
+                        </p>
+                        <p style="color: #475569; line-height: 1.7;">
+                            Deep local market knowledge. Cash-first discipline. Clear systems. Long-term vision with short-term accountability.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="border-top: 1px solid #e5e7eb; padding-top: 2rem;">
+                    <h4 style="font-weight: 700; color: #1f2937; margin-bottom: 1rem;">Why This Works</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div style="display: flex; gap: 0.75rem;">
+                            <span style="color: #dc2626; font-weight: bold;">✓</span>
+                            <span style="color: #475569;">Disciplined operator mentality</span>
+                        </div>
+                        <div style="display: flex; gap: 0.75rem;">
+                            <span style="color: #dc2626; font-weight: bold;">✓</span>
+                            <span style="color: #475569;">Clear execution systems</span>
+                        </div>
+                        <div style="display: flex; gap: 0.75rem;">
+                            <span style="color: #dc2626; font-weight: bold;">✓</span>
+                            <span style="color: #475569;">Local market expertise</span>
+                        </div>
+                        <div style="display: flex; gap: 0.75rem;">
+                            <span style="color: #dc2626; font-weight: bold;">✓</span>
+                            <span style="color: #475569;">Cashflow-first mindset</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk & Mitigation -->
+    <section style="padding: 5rem 0; background: white;">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="section-badge">Honest Assessment</span>
+                <h2 class="section-heading">Risk & Protection</h2>
+                <p class="section-subheading">Risk is managed, not ignored.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div style="background: #fef2f2; border-radius: 1.5rem; padding: 2rem; border-left: 4px solid #dc2626;">
+                    <h3 style="font-size: 1.25rem; font-weight: 700; color: #991b1b; margin-bottom: 1.5rem;">Potential Risks</h3>
+                    <div style="space-y: 1rem;">
+                        <div style="display: flex; gap: 0.75rem;">
+                            <span style="color: #dc2626;">⚠️</span>
+                            <div>
+                                <div style="font-weight: 600; color: #7f1d1d; margin-bottom: 0.25rem;">Slow Months</div>
+                                <div style="color: #991b1b; font-size: 0.875rem;">Revenue fluctuates with market demand</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 0.75rem;">
+                            <span style="color: #dc2626;">⚠️</span>
+                            <div>
+                                <div style="font-weight: 600; color: #7f1d1d; margin-bottom: 0.25rem;">Equipment Downtime</div>
+                                <div style="color: #991b1b; font-size: 0.875rem;">Technical issues can delay production</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #d1fae5; border-radius: 1.5rem; padding: 2rem; border-left: 4px solid #059669;">
+                    <h3 style="font-size: 1.25rem; font-weight: 700; color: #065f46; margin-bottom: 1.5rem;">How We Mitigate</h3>
+                    <div style="space-y: 1rem;">
+                        <div style="display: flex; gap: 0.75rem;">
+                            <span style="color: #059669;">✓</span>
+                            <div>
+                                <div style="font-weight: 600; color: #065f46; margin-bottom: 0.25rem;">Prepaid Orders</div>
+                                <div style="color: #047857; font-size: 0.875rem;">Cash-first system protects against demand risk</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 0.75rem;">
+                            <span style="color: #059669;">✓</span>
+                            <div>
+                                <div style="font-weight: 600; color: #065f46; margin-bottom: 0.25rem;">Multiple Suppliers</div>
+                                <div style="color: #047857; font-size: 0.875rem;">Backup relationships reduce production risk</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 0.75rem;">
+                            <span style="color: #059669;">✓</span>
+                            <div>
+                                <div style="font-weight: 600; color: #065f46; margin-bottom: 0.25rem;">Revenue-Based Payouts</div>
+                                <div style="color: #047857; font-size: 0.875rem;">Flexible payments during slow periods</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="contact-investor" style="padding: 5rem 0; background: linear-gradient(135deg, #dc2626 0%, #7f1d1d 50%, #000000 100%); position: relative; overflow: hidden;">
+        <div style="position: absolute; inset: 0; opacity: 0.1;">
+            <div style="position: absolute; top: 20%; left: 10%; width: 400px; height: 400px; background: radial-gradient(circle, #ffffff 0%, transparent 70%);"></div>
+            <div style="position: absolute; bottom: 20%; right: 10%; width: 500px; height: 500px; background: radial-gradient(circle, #ffffff 0%, transparent 70%);"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" style="position: relative; z-index: 1;">
+            <h2 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; color: #ffffff; margin-bottom: 1rem; line-height: 1.2;">
+                Let's Build Embu's<br>Leading Sticker Brand
+            </h2>
+            <p style="font-size: 1.25rem; color: #fca5a5; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                This is a cashflow deal, not a valuation gamble. Fast capital recovery. Monthly payouts. Clean exit.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; margin-bottom: 2rem;">
+                <a href="https://wa.me/254714929896?text=Hi!%20I%27m%20interested%20in%20investing%20in%20StiKaMafia.%20I%27d%20like%20to%20schedule%20a%20call." 
+                   style="display: inline-flex; align-items: center; gap: 0.75rem; background: white; color: #1f2937; padding: 1.25rem 3rem; border-radius: 9999px; font-weight: 700; text-decoration: none; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); transition: all 0.3s; font-size: 1.125rem;">
+                    <span>💼</span>
+                    <span>Schedule Investment Call</span>
+                </a>
+                <a href="mailto:info@stikamafia.co.ke?subject=Investment Inquiry" 
+                   style="display: inline-flex; align-items: center; gap: 0.75rem; background: rgba(255, 255, 255, 0.1); color: white; padding: 1rem 2.5rem; border-radius: 9999px; font-weight: 600; text-decoration: none; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s;">
+                    <span>📧</span>
+                    <span>Email: info@stikamafia.co.ke</span>
+                </a>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 1rem; padding: 1.5rem; max-width: 600px; margin: 0 auto;">
+                <p style="color: #fca5a5; font-size: 0.875rem; line-height: 1.6;">
+                    <strong style="color: white;">Investment Range:</strong> KSh 250K - 500K<br>
+                    <strong style="color: white;">Structure:</strong> 10-15% revenue share until 1.5x return<br>
+                    <strong style="color: white;">Timeline:</strong> 6-10 months typical payout period
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+        // Investment Calculator
+        const slider = document.getElementById('investmentAmount');
+        const display = document.getElementById('investmentDisplay');
+        const totalReturn = document.getElementById('totalReturn');
+        const profit = document.getElementById('profit');
+
+        if (slider) {
+            slider.addEventListener('input', function() {
+                const amount = parseInt(this.value);
+                display.textContent = amount.toLocaleString();
+                
+                const returnAmount = amount * 1.5;
+                const profitAmount = returnAmount - amount;
+                
+                totalReturn.textContent = 'KSh ' + returnAmount.toLocaleString();
+                profit.textContent = 'KSh ' + profitAmount.toLocaleString();
+            });
+        }
+    </script>
+
+</body>
+</html>
