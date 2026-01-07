@@ -1,0 +1,183 @@
+/* ===================================
+   STIKAMAFIA - MAIN STYLESHEET
+   Core styles, variables, and base classes
+   =================================== */
+
+/* CSS Variables (Design Tokens) */
+:root {
+    /* Colors */
+    --primary: #dc2626;
+    --primary-dark: #b91c1c;
+    --primary-light: #ef4444;
+    --secondary: #000000;
+    --secondary-light: #1f2937;
+    --success: #dc2626;
+    --success-dark: #b91c1c;
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+    --text-on-dark: #f8fafc;
+    --bg-white: #ffffff;
+    --bg-gray: #f8fafc;
+    --bg-dark: #0f172a;
+    --border-color: #e2e8f0;
+    --border-red: #fca5a5;
+    --accent-red-light: #fee2e2;
+    --accent-red-medium: #fca5a5;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+
+    /* Typography */
+    --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.6;
+
+    /* Border Radius */
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+    --radius-lg: 1.5rem;
+    --radius-xl: 2rem;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2);
+
+    /* Transitions */
+    --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease;
+}
+
+/* Base Styles */
+* {
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--font-size-base);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: var(--line-height-base);
+    color: var(--text-dark);
+}
+
+/* Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary);
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-md);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: var(--spacing-sm);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Focus States */
+a:focus,
+button:focus {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Typography */
+.section-heading {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-dark);
+}
+
+.section-subheading {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: var(--text-light);
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.card-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-dark);
+}
+
+.card-text {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* Gradients */
+.gradient-bg {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Sticker Shape */
+.sticker-shape {
+    clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    nav,
+    footer,
+    .floating-whatsapp {
+        display: none !important;
+    }
+}
+
+/* Reduced Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark Mode Support (future-ready) */
+@media (prefers-color-scheme: dark) {
+    /* Add dark mode overrides here when needed */
+}

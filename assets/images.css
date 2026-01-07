@@ -1,0 +1,660 @@
+/* ===================================
+   IMAGE & VISUAL ENHANCEMENT STYLES
+   Handles all image-related styling and visual effects
+   =================================== */
+
+/* ========== LOGO ENHANCEMENTS ========== */
+
+.logo-icon-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: var(--transition-base);
+}
+
+.logo-link:hover .logo-icon-img {
+    transform: rotate(5deg) scale(1.05);
+}
+
+/* ========== ENHANCED HERO SECTION ========== */
+
+.hero-section-enhanced {
+    background: linear-gradient(135deg, #000000 0%, #1f2937 50%, #dc2626 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated Background Pattern */
+.hero-bg-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+    background-image:
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
+    animation: patternShift 20s ease-in-out infinite;
+}
+
+@keyframes patternShift {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(20px, 20px) scale(1.1);
+    }
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0.7;
+    animation: fadeInUp 1s ease-out 1s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+
+    to {
+        opacity: 0.7;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.scroll-mouse {
+    width: 24px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    position: relative;
+}
+
+.scroll-wheel {
+    width: 4px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scrollDown 2s infinite;
+}
+
+@keyframes scrollDown {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(12px);
+        opacity: 0;
+    }
+}
+
+.scroll-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* ========== 3D STICKER SHOWCASE ========== */
+
+.hero-visual-enhanced {
+    perspective: 1000px;
+    position: relative;
+}
+
+.sticker-showcase {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.sticker-card-3d {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(-10deg) rotateX(5deg);
+    width: 320px;
+    height: 320px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sticker-card-3d:hover {
+    transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg) scale(1.05);
+}
+
+.sticker-front {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sticker-placeholder {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Animated Grid Background */
+.sticker-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(220, 38, 38, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(220, 38, 38, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    animation: gridSlide 20s linear infinite;
+}
+
+@keyframes gridSlide {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(20px, 20px);
+    }
+}
+
+.sticker-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Floating Feature Badges */
+.feature-badge {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-badge:hover {
+    transform: scale(1.1) !important;
+}
+
+.badge-icon {
+    font-size: 2rem;
+}
+
+.badge-text {
+    color: var(--text-dark);
+}
+
+.badge-no-min {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    top: 20%;
+    left: -10%;
+    transform: rotate(-12deg);
+}
+
+.badge-fast {
+    background: linear-gradient(135deg, #000000 0%, #1f2937 100%);
+    top: 10%;
+    right: -5%;
+    transform: rotate(12deg);
+}
+
+.badge-quality {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    bottom: 15%;
+    right: 10%;
+    transform: rotate(-8deg);
+    color: white;
+}
+
+.badge-quality .badge-text {
+    color: white;
+}
+
+/* ========== TRUST BAR ========== */
+
+.trust-bar {
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.trust-stat {
+    transition: transform 0.3s ease;
+}
+
+.trust-stat:hover {
+    transform: translateY(-4px);
+}
+
+.trust-stat .stat-number {
+    background: linear-gradient(135deg, #000000 0%, #dc2626 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ========== BEFORE/AFTER SECTION ========== */
+
+.before-after-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.before-state,
+.after-state {
+    position: relative;
+    min-height: 400px;
+}
+
+.problem-item,
+.solution-item {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background: rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.problem-item:hover,
+.solution-item:hover {
+    transform: translateX(8px);
+}
+
+/* ========== FOUNDER CARD ENHANCED ========== */
+
+.founder-card-enhanced {
+    position: relative;
+}
+
+.founder-card-bg {
+    background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+    border-radius: 2rem;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fca5a5;
+}
+
+.founder-card-bg::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: rotateGlow 20s linear infinite;
+}
+
+@keyframes rotateGlow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.founder-card-content {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.founder-photo-wrapper {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 1.5rem;
+}
+
+.founder-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #000000 0%, #dc2626 100%);
+    padding: 4px;
+    box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+    position: relative;
+}
+
+.founder-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Verified Badge */
+.verified-badge {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(220, 38, 38, 0.4);
+    border: 3px solid white;
+}
+
+.founder-social {
+    margin: 1.5rem 0;
+}
+
+.social-proof-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    color: white;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition-base);
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+}
+
+.social-proof-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
+}
+
+/* ========== WORK GALLERY (MASONRY LAYOUT) ========== */
+
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    grid-auto-rows: 200px;
+}
+
+@media (min-width: 768px) {
+    .work-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.work-item {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.work-item:hover {
+    transform: translateY(-8px);
+}
+
+.work-item-tall {
+    grid-row: span 2;
+}
+
+.work-item-wide {
+    grid-column: span 2;
+}
+
+@media (max-width: 767px) {
+    .work-item-wide {
+        grid-column: span 1;
+    }
+}
+
+.work-image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.work-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.work-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.work-item:hover .work-overlay {
+    opacity: 1;
+}
+
+.work-title {
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+}
+
+.work-category {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.875rem;
+}
+
+/* Lazy Loading Images */
+.work-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.work-image-wrapper img.loaded {
+    opacity: 1;
+}
+
+/* ========== IMAGE OPTIMIZATION ========== */
+
+/* Blur-up technique for progressive loading */
+.blur-load {
+    background-size: cover;
+    background-position: center;
+}
+
+.blur-load img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.blur-load img.loaded {
+    opacity: 1;
+}
+
+/* Aspect ratio boxes (prevents layout shift) */
+.aspect-ratio-box {
+    position: relative;
+    width: 100%;
+}
+
+.aspect-ratio-box::before {
+    content: '';
+    display: block;
+    padding-top: var(--aspect-ratio, 100%);
+}
+
+.aspect-ratio-box>* {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Common aspect ratios */
+.aspect-16-9::before {
+    padding-top: 56.25%;
+}
+
+.aspect-4-3::before {
+    padding-top: 75%;
+}
+
+.aspect-1-1::before {
+    padding-top: 100%;
+}
+
+.aspect-3-2::before {
+    padding-top: 66.67%;
+}
+
+/* ========== TESTIMONIAL IMAGE ENHANCEMENTS ========== */
+
+.testimonial-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.testimonial-card:hover::before {
+    opacity: 1;
+}
+
+/* ========== MOBILE OPTIMIZATIONS ========== */
+
+@media (max-width: 768px) {
+    .hero-visual-enhanced {
+        display: none;
+    }
+
+    .sticker-showcase {
+        height: 300px;
+    }
+
+    .sticker-card-3d {
+        width: 240px;
+        height: 240px;
+    }
+
+    .feature-badge {
+        width: 80px;
+        height: 80px;
+        font-size: 0.65rem;
+    }
+
+    .badge-icon {
+        font-size: 1.5rem;
+    }
+
+    .founder-photo-wrapper {
+        width: 120px;
+        height: 120px;
+    }
+
+    .founder-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* ========== PRINT STYLES ========== */
+
+@media print {
+
+    .hero-bg-pattern,
+    .scroll-indicator,
+    .sticker-grid {
+        display: none;
+    }
+
+    .work-overlay {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.6);
+    }
+}
+
+/* ========== PERFORMANCE: REDUCE MOTION ========== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero-bg-pattern,
+    .sticker-grid,
+    .scroll-wheel,
+    .founder-card-bg::before {
+        animation: none !important;
+    }
+
+    .floating {
+        animation: none !important;
+    }
+}
